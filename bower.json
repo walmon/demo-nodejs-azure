@@ -1,0 +1,19 @@
+{
+  "name": "demo_open_source_azure",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Walter Montes <walmon93@hotmail.com>"
+  ],
+  "directory" : "wwwroot/bower_components",
+  "license": "ISC",
+  "homepage": "https://github.com/walmon/demo-nodejs-azure",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

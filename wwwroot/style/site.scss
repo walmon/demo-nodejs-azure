@@ -1,0 +1,27 @@
+body{
+    background:#ddd;
+    color:#333;
+    border:solid 3px #333;
+    margin:0;
+    padding:0;
+    .wrapper{
+        padding:24px;
+        
+            margin: 0 auto;
+            max-width:960px;
+        .form{
+        }
+        .newItem{
+            margin:24px;
+            border-top:1px solid #333;
+        }
+        .card{
+            margin:12px 0;
+            padding:12px;
+            
+            background:#333;
+            color:#ddd;
+        }
+    }
+    
+}

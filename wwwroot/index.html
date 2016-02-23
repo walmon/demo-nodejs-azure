@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>DEMO</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/site.css" />
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="js/app.module.js"></script>
+</head>
+
+<body ng-app="demo" ng-controller="demoCtrl">
+    <div class="wrapper">
+        <h1>Demo Node.JS + DocumentDB + Azure</h1>
+
+        <div class="">
+            <div class="items">
+                <div class="card" ng-repeat="item in items">
+                    {{item.name}} {{item.lastname}}
+                </div>
+            </div>
+            <div class="newItem">
+                <h3>Nuevo item</h3>
+                <div class="form-group">
+                    <input class="form-control" ng-model="newItem.name" placeholder="Nombre" />
+                </div>
+                <div class="form-group">
+                    <input class="form-control" ng-model="newItem.lastname" placeholder="Apellido" />
+
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-default" ng-click="insert(newItem)">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
