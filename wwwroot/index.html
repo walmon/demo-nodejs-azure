@@ -17,7 +17,7 @@
         <div class="">
             <div class="items">
                 <div class="card" ng-repeat="item in items">
-                    {{item.name}} {{item.lastname}}
+                    {{item.name}} {{item.lastname}} {{item.gender}}
                 </div>
             </div>
             <div class="newItem">
@@ -27,6 +27,10 @@
                 </div>
                 <div class="form-group">
                     <input class="form-control" ng-model="newItem.lastname" placeholder="Apellido" />
+
+                </div>
+                <div class="form-group">
+                    <input class="form-control" ng-model="newItem.gender" placeholder="Sexo" />
 
                 </div>
                 <div class="form-group">
